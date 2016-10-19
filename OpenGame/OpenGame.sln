@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 14 for Windows Desktop
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenGame", "OpenGame\OpenGame.csproj", "{BD3DF46C-F203-4DE7-8C92-0BF1A69954DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD3DF46C-F203-4DE7-8C92-0BF1A69954DC}.Debug|x86.ActiveCfg = Debug|x86
+		{BD3DF46C-F203-4DE7-8C92-0BF1A69954DC}.Debug|x86.Build.0 = Debug|x86
+		{BD3DF46C-F203-4DE7-8C92-0BF1A69954DC}.Release|x86.ActiveCfg = Release|x86
+		{BD3DF46C-F203-4DE7-8C92-0BF1A69954DC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
