@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
-namespace OpenGame
+using GameEngine;
+namespace ProjectOpen
 {
     /// <summary>
     /// This is the main type for your game.
@@ -11,7 +11,7 @@ namespace OpenGame
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-
+        public static Game1 instance;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -27,7 +27,7 @@ namespace OpenGame
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            instance = this;
             base.Initialize();
         }
 
@@ -39,7 +39,7 @@ namespace OpenGame
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            SceneManager.setScene(new Level());
             // TODO: use this.Content to load your game content here
         }
 
@@ -63,7 +63,7 @@ namespace OpenGame
                 Exit();
 
             // TODO: Add your update logic here
-
+            SceneManager.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -75,6 +75,7 @@ namespace OpenGame
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
+            SceneManager.Draw(spriteBatch);
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
