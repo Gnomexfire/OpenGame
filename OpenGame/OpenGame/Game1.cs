@@ -1,7 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using GameEngine;
+using Microsoft.Xna.Framework.Input;
+
 namespace ProjectOpen
 {
     /// <summary>
@@ -39,7 +40,7 @@ namespace ProjectOpen
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            SceneManager.setScene(new Level());
+            
             // TODO: use this.Content to load your game content here
         }
 
@@ -63,7 +64,7 @@ namespace ProjectOpen
                 Exit();
 
             // TODO: Add your update logic here
-            SceneManager.Update(gameTime);
+            
             base.Update(gameTime);
         }
 
@@ -75,7 +76,7 @@ namespace ProjectOpen
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            SceneManager.Draw(spriteBatch);
+            
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);
